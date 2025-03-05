@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  h1{
+    margin-top: 1rem;
+  }
+
+  .imageContainer{
+    border: 5px solid tomato;
+    height: 300px;
+    width: 350px;
+    margin-top: 1rem;
+    border-radius: 1rem;
+  }
+
+  img{
+    height: 100%;
+    width: 100%;
+    border-radius: 0.7rem;
+  }
+
+  .buttons{
+    margin-top: 1rem;
+  }
+
+  .buttons button{
+    padding: 5px 10px;
+    height: 30px;
+    width: 150px;
+    font-size: 15px;
+    border-radius: 8px;
+    border: none;
+    background-color: tomato;
+    color: white;
+    font-weight: bold;
+    margin: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+
+  .buttons button:hover{
+    transform: scale(1.05);
+    background-color: rgb(184, 35, 9);
+  }

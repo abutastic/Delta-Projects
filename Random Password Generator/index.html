@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Random Password Generator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Strong Password Generator</h1>
+      <p>
+        Enter the length you want and click the 'Generate' button to generate a
+        strong password
+      </p>
+      <input
+        type="number"
+        placeholder="Enter the length of the password"
+        min="5"
+        max="20"
+      />
+      <p class="para">Password: <span class="passContainer"></span></p>
+      <button>Generate</button>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

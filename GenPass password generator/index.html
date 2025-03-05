@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GenPass</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Monda:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="shortcut icon" href="download.png" type="image/x-icon">
+  </head>
+  <body>
+    <div class="container">
+      <h1>
+        Gen<span>Pass<i class="fa-solid fa-lock"></i></span>
+      </h1>
+      <p class="tagline">Generate desired passwords</p>
+      <p class="info">
+        "Choose character types and click 'Generate' to create a password. If
+        none are selected, all types are included. Click the copy icon to copy
+        it." 🚀
+      </p>
+
+      <div class="checkBoxes">
+        <div>
+          <label for="upper">
+            <input type="checkbox" id="upper" />Letters (A-Z)</label
+          >
+        </div>
+        <div>
+          <label for="lower"
+            ><input type="checkbox" id="lower" />Letters (a-z)</label
+          >
+        </div>
+        <div>
+          <label for="nums"><input type="checkbox" id="nums" />Numbers</label>
+        </div>
+
+        <div>
+          <label for="chars" id="special">
+            <input type="checkbox" id="chars" />Special Chars</label
+          >
+        </div>
+      </div>
+
+      <div class="password"><span id="display"></span><i class="fa-solid fa-copy" id="copy"></i></div>
+
+      <button>Generate <i class="fa-solid fa-bolt"></i></button>
+    </div>
+
+    <p class="devInfo">
+      Developed by: Abbas WH
+      <a
+        target="_blank"
+        href="https://www.linkedin.com/in/mohammed-abbas-wh-110a97231/"
+        ><i class="fa-brands fa-linkedin"></i
+      ></a>
+      <a target="_blank" href="https://github.com/abutastic"
+        ><i class="fa-brands fa-square-github"></i
+      ></a>
+    </p>
+    <script src="app.js"></script>
+  </body>
+</html>

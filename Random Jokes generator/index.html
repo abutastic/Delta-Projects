@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Random Jokes Generator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Random Jokes Generator</h1>
+      <p id="info">Click the button "generate joke" to generate a new Joke!</p>
+      <h3>Select a Category Below</h3>
+      <p class="note">
+        Note: if selected random others will be disabled, uncheck random to
+        select others
+      </p>
+      <div class="categories">
+        <div>
+          <input type="checkbox" id="rand" />
+          <label for="rand">Random</label>
+        </div>
+
+        <div>
+          <input type="checkbox" id="Programming" />
+          <label for="Programming">Programming</label>
+        </div>
+
+        <div>
+          <input type="checkbox" id="Miscellaneous" />
+          <label for="Miscellaneous">Miscellaneous</label>
+        </div>
+        <div>
+          <input type="checkbox" id="Dark" />
+          <label for="Dark">Dark</label>
+        </div>
+        <div>
+          <input type="checkbox" id="Pun" />
+          <label for="Pun">Pun</label>
+        </div>
+        <div>
+          <input type="checkbox" id="Spooky" />
+          <label for="Spooky">Spooky</label>
+        </div>
+      </div>
+      <div class="joke">
+        <span class="setup">Click the button below to generate a new joke</span>
+        <span class="delivery"></span>
+      </div>
+      <button>Generate Joke</button>
+    </div>
+
+    <p class="dev">
+      Developed by:
+      <a
+        target="_blank"
+        href="https://www.linkedin.com/in/mohammed-abbas-wh-110a97231/"
+        >Abbas WH</a
+      >
+    </p>
+    <script src="app.js"></script>
+  </body>
+</html>

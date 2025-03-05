@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+  width: 100vw;
+  text-align: center;
+}
+
+input {
+  width: 200px;
+  margin-top: 1rem;
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+
+button {
+  padding: 5px 10px;
+  border-radius: 10px;
+  margin-top: 1rem;
+}
+
+.para{
+    background-color: red;
+    color: white;
+    margin-top: 1rem;
+}

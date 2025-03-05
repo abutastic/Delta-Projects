@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <main>
+      <form action="">
+        <input type="text" autocomplete="off" id="search"/>
+        <button>
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+      </form>
+
+      <section class="result">
+        <figure class="name" id="city">
+          <figcaption>London</figcaption>
+          <img src="https://flagsapi.com/GB/shiny/32.png" alt="" />
+        </figure>
+        <figure class="temperature" id="temperature">
+          <img src="http://openweathermap.org/img/wn/10d@4x.png" />
+          <figcaption>
+            <span>31</span>
+            <sup>o</sup>
+          </figcaption>
+        </figure>
+
+        <p class="description">Overcast clouds</p>
+
+        <ul>
+          <li>
+            <span>Clouds</span>
+            <i class="fa-solid fa-cloud"></i>
+            <span id="clouds">98</span>%
+          </li>
+
+          <li>
+            <span>Humidity</span>
+            <i class="fa-solid fa-droplet"></i>
+            <span id="humidity">55</span>%
+          </li>
+
+          <li>
+            <span>Pressure</span>
+            <i class="fa-solid fa-gauge"></i>
+            <span id="pressure">1001</span>hpa
+          </li>
+        </ul>
+      </section>
+    </main>
+    <p id="dev"><a href="https://www.linkedin.com/in/mohammed-abbas-wh-110a97231/" target="_blank">dev info <i class="fa-solid fa-laptop-code"></i></a></p>
+    <script src="script.js"></script>
+  </body>
+</html>
