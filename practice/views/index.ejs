@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <h1>Welcome to profiles Page</h1>
+    <% for(let profile of profiles) {%>
+    <div class="profile">
+      <div class="img">
+        <img src="<%= profile.img %>" alt="profile image" />
+      </div>
+      <div class="data">
+        <p class="username">@<%= profile.username %></p>
+        <p class="bio"><%= profile.bio %></p>
+        <p class="id"><%= profile.id %></p>
+        <a href="http://localhost:2800/profiles/<%= profile.id  %>/edit"
+          >Edit profile</a
+        >
+        <a href="http://localhost:2800/profiles/<%= profile.id  %>/view"
+          >View profile</a
+        >
+        <form
+          action="/profiles/<%= profile.id  %>?_method=DELETE"
+          method="post"
+        >
+          <button>Delete</button>
+        </form>
+      </div>
+    </div>
+    <% } %>
+
+    <a style="text-align: center" href="http://localhost:2800/profiles/new"
+      >Create New Profile</a
+    >
+  </body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Edit your Profile</title>
+    <style>
+      input {
+        margin-bottom: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Edit your Profile</h1>
+    <form action="/profiles/<%= profile.id %>?_method=PUT" method="post">
+      Edit username <br />
+      <input type="text" value="<%= profile.username %>" name="username" />
+      <br />
+      Edit bio <br />
+      <input type="text" value="<%= profile.bio %>" name="bio" /> <br />
+      Edit image link <br />
+      <input type="text" value="<%= profile.img %>" name="img" />
+      <button>Submit</button>
+    </form>
+  </body>
+</html>

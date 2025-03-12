@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>See Full Profile</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <h1>Welcome to full profile</h1>
+    <div class="profile">
+      <div class="img">
+        <img src="<%= profile.img %>" alt="profile image" />
+      </div>
+      <div class="data">
+        <p class="username">@<%= profile.username %></p>
+        <p class="bio"><%= profile.bio %></p>
+        <p class="id"><%= profile.id %></p>
+        <a href="#">Edit profile</a>
+        <a href="http://localhost:2800/profiles/<%= profile.id  %>/view"
+          >View profile</a
+        >
+        <a href="#">Delete profile</a>
+      </div>
+    </div>
+  </body>
+</html>

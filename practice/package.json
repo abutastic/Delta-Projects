@@ -1,0 +1,17 @@
+{
+  "name": "practice",
+  "version": "1.0.0",
+  "description": "RESTful API practice code",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Abbas Hubli",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^4.21.2",
+    "method-override": "^3.0.0",
+    "uuid": "^11.1.0"
+  }
+}
