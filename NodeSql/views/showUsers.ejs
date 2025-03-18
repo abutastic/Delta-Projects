@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>All user profiles</title>
+    <link rel="stylesheet" href="/showUser.css" />
+  </head>
+  <body>
+    <h2>The Team</h2>
+    <p class="p">These are the members of our team</p>
+    <div class="container">
+      <% for(let user of users){ %>
+      <div class="profile">
+        <div class="img">
+          <img src="<%= user.avatar %>" alt="profile-icon" />
+        </div>
+        <div class="info">
+          <h3>@<%= user.username %></h3>
+          <p><%= user.email %></p>
+          <button>Contact</button>
+          <form
+            action="/users/<%= user.id %>/edit"
+            method="get"
+            style="display: inline"
+          >
+            <button>Edit</button>
+          </form>
+          <form
+            action="/users/<%= user.id %>/delete"
+            method="get"
+            style="display: inline"
+          >
+            <button>Delete Account</button>
+          </form>
+        </div>
+      </div>
+      <% } %>
+    </div>
+
+    <form action="/users/new" method="get">
+      <button>Add new User</button>
+    </form>
+  </body>
+</html>

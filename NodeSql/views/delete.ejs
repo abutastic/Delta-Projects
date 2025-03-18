@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Delete Account</title>
+  </head>
+  <body>
+    <h2>Enter your password below to delete this account</h2>
+    <form method="post" action="/users/<%= id %>/delete/?_method=DELETE">
+      <label for="pass">Enter your password:</label>
+      <input
+        type="password"
+        name="password"
+        id="pass"
+        placeholder="Enter your password here"
+        required
+      />
+      <br />
+      <br />
+      <button>Delete Account</button>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Times New Roman", Times, serif;
+}
+
+body {
+  background-color: cornsilk;
+  height: 100vh;
+  width: 100vw;
+}
+
+h2,
+.p {
+  text-align: center;
+}
+
+p {
+  margin-bottom: 20px;
+}
+
+.profile {
+  width: 290px;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  border: 3px solid black;
+  border-radius: 2rem;
+  padding: 15px;
+}
+
+img {
+  height: 100px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+form {
+  margin: 30px;
+  cursor: pointer;
+}

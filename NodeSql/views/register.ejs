@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add new user</title>
+  </head>
+  <body>
+    <h2>Add new user to the Database.</h2>
+    <p>Please fill the form to add new user to the database</p>
+    <form action="/users" method="post">
+      <label for="user">Enter username</label>
+      <input
+        type="text"
+        id="user"
+        name="username"
+        placeholder="Enter a unique username"
+        required
+      />
+      <br />
+      <br />
+      <label for="email">Enter email</label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="Enter your email"
+        required
+      />
+      <br />
+      <br />
+      <label for="avatar">Enter image link</label>
+      <input
+        type="text"
+        id="avatar"
+        name="avatar"
+        placeholder="Enter hosted image link"
+        required
+      />
+      <br />
+      <br />
+      <label for="pass">Set a password</label>
+      <input
+        type="password"
+        id="pass"
+        name="password"
+        placeholder="Set a password to your profile"
+        required
+      />
+      <br />
+      <br />
+
+      <button>Create account</button>
+    </form>
+  </body>
+</html>
