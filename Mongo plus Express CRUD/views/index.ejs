@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>All profiles</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <h2>All the users data</h2>
+    <div class="container">
+      <% for(let profile of profiles){ %>
+      <div class="profile">
+        <p>Name: <%= profile.name %></p>
+        <p>Bio: <%= profile.bio %></p>
+        <p>email: <%= profile.email %></p>
+        <div>
+          <form action="/profiles/<%= profile._id %>/edit" method="get">
+            <button>Edit profile</button>
+          </form>
+          <form
+            action="/profiles/<%= profile._id %>?_method=DELETE"
+            method="post"
+          >
+            <button>Delete profile</button>
+          </form>
+        </div>
+      </div>
+      <% } %>
+
+      <form action="/profiles/new" method="get">
+        <button>Create new Account</button>
+      </form>
+    </div>
+  </body>
+</html>

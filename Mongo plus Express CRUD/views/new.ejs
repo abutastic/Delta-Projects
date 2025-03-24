@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create new Account</title>
+    <style>
+      * {
+        font-family: cursive;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>Create new Account</h3>
+    <form action="/profiles" method="post">
+      <label for="name">Enter your name: </label>
+      <input
+        id="name"
+        type="text"
+        name="name"
+        placeholder="Enter your name please"
+        required
+      />
+      <label for="email">Enter your email: </label>
+      <input
+        type="email"
+        name="email"
+        placeholder="Enter your email please"
+        required
+      />
+      <label for="bio">Enter your bio: </label>
+      <input
+        type="text"
+        name="bio"
+        placeholder="Enter your bio please (max 50)"
+        maxlength="50"
+        required
+      />
+      <label for="pin">Enter your pin: </label>
+      <input
+        type="password"
+        name="pin"
+        placeholder="Enter a 5 digit password please"
+        min="10000"
+        max="99999"
+        required
+      />
+      <button>Create Account</button>
+    </form>
+  </body>
+</html>

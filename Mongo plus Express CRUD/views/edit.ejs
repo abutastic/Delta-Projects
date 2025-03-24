@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Edit your profile</title>
+    <style>
+      * {
+        font-family: cursive;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>Edit your profile</h3>
+    <h4>Your email is: <%= user.email %></h4>
+    <form action="/profiles/<%= user._id %>?_method=PATCH" method="post">
+      <label for="name">Edit your name: </label>
+      <input
+        id="name"
+        type="text"
+        name="name"
+        placeholder="Enter your name please"
+        value="<%= user.name %>"
+      />
+      <label for="bio">Edit your bio: </label>
+      <input
+        type="text"
+        name="bio"
+        placeholder="Enter your bio please (max 50)"
+        maxlength="50"
+        value="<%= user.bio %>"
+      />
+      <label for="pin">Enter your pin: </label>
+      <input
+        type="password"
+        name="pin"
+        placeholder="Enter a 5 digit password please"
+        min="10000"
+        max="99999"
+        required
+      />
+
+      <button>Edit Account</button>
+    </form>
+  </body>
+</html>
