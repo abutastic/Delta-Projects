@@ -1,0 +1,50 @@
+input {
+  height: 30px;
+  width: 250px;
+  border-radius: 1rem;
+  padding: 5px;
+  margin-right: 5px;
+  outline: none;
+  border: 1px solid gray;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  border-radius: 1rem;
+}
+
+.task {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 420px;
+  background-color: black;
+  border-radius: 1rem;
+  padding: 0 10px;
+  margin-bottom: 7px;
+}
+
+.task p {
+  text-align: left;
+  width: 70%;
+}
+
+.taskBtn {
+  padding: 7px 15px;
+  font-size: 15px;
+}
+
+#done {
+  color: green;
+  margin-left: 5px;
+}
+
+#delete {
+  color: red;
+  margin-left: 5px;
+}
